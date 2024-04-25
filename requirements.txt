@@ -1,0 +1,4 @@
+colorama
+langchain
+langchain_community
+pygame
