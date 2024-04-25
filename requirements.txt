@@ -2,3 +2,5 @@ colorama
 langchain
 langchain_community
 pygame
+sounddevice
+numpy

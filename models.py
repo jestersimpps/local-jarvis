@@ -4,7 +4,7 @@ class Entity:
     LLM = 2
 
 
-class State:
+class AppState:
     WAITING_FOR_INPUT = 1
     RECORDING_INPUT = 2
     PROCESSING_INPUT = 3
