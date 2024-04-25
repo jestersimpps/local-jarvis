@@ -1,4 +1,9 @@
 
+
+
+from models import LogLevel
+
+
 class Config:
   
   
@@ -8,3 +13,5 @@ class Config:
 
 
   LOCAL_OLLAMA_LLM = "phi3"
+  
+  LOG_LEVEL = LogLevel.DEBUG
