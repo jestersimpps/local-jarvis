@@ -4,3 +4,7 @@ langchain_community
 pygame
 sounddevice
 numpy
+keyboard
+scipy
+faster_whisper
+kink
