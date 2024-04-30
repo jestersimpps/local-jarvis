@@ -1,9 +1,7 @@
-
-
-
+from kink import inject
 from models import LogLevel
 
-
+@inject
 class Config:
   
   BOT_NAME = "Vicky"
@@ -11,7 +9,7 @@ class Config:
   You are {BOT_NAME}, a robotic assistant.
   """
 
-  LOCAL_OLLAMA_LLM = "phi3"
+  LOCAL_OLLAMA_LLM = "llama3-gradient"
   OFFLINE = True
   
   LOG_LEVEL = LogLevel.INFO

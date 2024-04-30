@@ -1,5 +1,5 @@
-from colorama import init, Fore, Style
 from kink import inject
+from colorama import init, Fore, Style
 
 
 @inject

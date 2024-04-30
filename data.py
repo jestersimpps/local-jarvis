@@ -5,6 +5,7 @@ from models import Entity, AppState, LogLevel
 
 @inject
 class Data:
+  
     logLevel = LogLevel.INFO
     conversation = []
     appState = AppState.WAITING_FOR_INPUT

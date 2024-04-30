@@ -3,7 +3,7 @@ from langchain_community.llms import Ollama
 from audio import Audio
 from config import Config
 from data import Data
-from logging import Logging
+from log import Logging
 from models import Entity
 
 
@@ -54,15 +54,15 @@ class Llm:
                     chunk = buffer[: lastSPlitterPos + 1]
                     buffer = buffer[lastSPlitterPos + 1 :]
 
-                    # Queue this chunk for async TTS processing
-                    self._audio.addToAsyncTextToSpeechQueue(chunk)
+                    self._audio.playAudio(chunk)
+
         except Exception as e:
             self._logging.logError(f"Error during LLM response: {e}")
             return
 
         # Process any remaining text in buffer
         if buffer:
-            self._audio.addToAsyncTextToSpeechQueue(buffer)
+            self._audio.playAudio(buffer)
 
         # Append full response to the conversation history
         self._data.addToConversation(llmResponse, Entity.LLM)

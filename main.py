@@ -4,7 +4,7 @@ from llm import Llm
 from data import Data
 from kink import inject
 from models import AppState
-from logging import Logging
+from log import Logging
 
 import keyboard
 import time
@@ -27,7 +27,7 @@ class Main:
         # Log info
         self._logging.logInfo(f"Instructions: {Config.INSTRUCTIONS}")
         self._logging.logInfo(f"Press the space bar to start recording")
-        self._audio.addToAsyncTextToSpeechQueue(f"Hi, I am {Config.BOT_NAME}. How can I help you?")
+        self._audio.playAudio(f"Hi, I am {Config.BOT_NAME}. How can I help you?")
 
     def _onSpacePress(self, event):
         if event.name == "space":
@@ -68,7 +68,6 @@ class Main:
 
         except KeyboardInterrupt:
             self._logging.logInfo("Shutting down gracefully...")
-            self._audio.shutDownTreads()
 
 
 # Init the LLM

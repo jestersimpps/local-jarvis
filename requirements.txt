@@ -1,10 +1,10 @@
-colorama
-langchain
-langchain_community
-pygame
-sounddevice
-numpy
-keyboard
-scipy
-faster_whisper
-kink
+# colorama
+# langchain
+# langchain_community
+# pygame
+# sounddevice
+# numpy
+# keyboard
+# scipy
+# faster_whisper==1.0.1
+# kink
