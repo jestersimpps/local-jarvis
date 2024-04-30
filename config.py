@@ -6,7 +6,7 @@ class Config:
   
   BOT_NAME = "Vicky"
   INSTRUCTIONS = f"""
-  You are {BOT_NAME}, a robotic assistant.
+  You are {BOT_NAME}, a robotic assistant. Be short and answer with less than 30 words.
   """
   
   # TTS
@@ -14,7 +14,7 @@ class Config:
   LOCAL_TTS_RATE=200
 
   # LLM
-  LOCAL_OLLAMA_LLM = "llama3"
+  LOCAL_OLLAMA_LLM = "llama3:8b"
   OFFLINE = True
   
   
