@@ -1,5 +1,8 @@
 # Local-Jarvis
 
+[![DEMO](https://img.youtube.com/vi/XKjB0ug3sWk/0.jpg)](https://www.youtube.com/watch?v=XKjB0ug3sWk)
+
+
 This is a setup to have fully offline conversations with local language models.
 It should run on any M1 and higher Mac.
 I am using Faster-Whisper for speech-to-text transcription.

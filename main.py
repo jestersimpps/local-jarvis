@@ -67,6 +67,7 @@ class Main:
                 time.sleep(0.1)
 
         except KeyboardInterrupt:
+            print("")
             self._logging.logInfo("Shutting down...")
 
 

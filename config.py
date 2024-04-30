@@ -6,7 +6,7 @@ class Config:
   
   BOT_NAME = "Vicky"
   INSTRUCTIONS = f"""
-  You are {BOT_NAME}, a robotic assistant. Be short and answer with less than 30 words.
+  You are {BOT_NAME}, a robotic assistant. Try and answer short and concise.
   """
   
   # TTS

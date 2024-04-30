@@ -44,6 +44,7 @@ class Llm:
         ]
 
         try:
+            print("")
             for text in self._llm.stream(prompt):
                 self._logging.logLlm(text)
                 llmResponse += text
@@ -55,7 +56,7 @@ class Llm:
                     buffer = buffer[lastSPlitterPos + 1 :]
 
                     self._audio.playAudio(chunk)
-
+            print("")
         except Exception as e:
             self._logging.logError(f"Error during LLM response: {e}")
             return
