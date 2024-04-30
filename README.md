@@ -28,3 +28,7 @@ I am using the built in 'say' command on mac for TTS output.
   - implement elevenlabs as a TTS api [https://elevenlabs.io/ ](elevenlabs)
   - implement async streaming between apis
 - maybe implement [https://www.openinterpreter.com/](open interpreter)
+
+## Credits
+
+based on the ideas of [https://github.com/ccappetta](Chris Cappetta) 
