@@ -76,5 +76,5 @@ class Audio:
 
     def playAudio(self, text):
         os.system(
-            f"say -v  com.apple.speech.synthesis.voice.{self._config.LOCAL_TTS_VOICE} -r {self._config.LOCAL_TTS_RATE} " + cleanOutputText(text)
+            f"say -v {self._config.LOCAL_TTS_VOICE} -r {self._config.LOCAL_TTS_RATE} " + cleanOutputText(text)
         )

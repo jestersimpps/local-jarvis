@@ -10,7 +10,7 @@ class Config:
   """
   
   # TTS
-  LOCAL_TTS_VOICE="joelle"
+  LOCAL_TTS_VOICE="com.apple.speech.synthesis.voice.joelle"
   LOCAL_TTS_RATE=200
 
   # LLM
