@@ -67,7 +67,7 @@ class Main:
                 time.sleep(0.1)
 
         except KeyboardInterrupt:
-            self._logging.logInfo("Shutting down gracefully...")
+            self._logging.logInfo("Shutting down...")
 
 
 # Init the LLM
