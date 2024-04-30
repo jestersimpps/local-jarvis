@@ -44,7 +44,7 @@ class Llm:
         ]
 
         try:
-            for text in self._llm.stream(validatedHistory):
+            for text in self._llm.stream(prompt):
                 self._logging.logLlm(text)
                 llmResponse += text
                 buffer += text
