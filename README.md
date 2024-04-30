@@ -13,7 +13,6 @@ I am using the built-in 'say' command on mac for TTS output.
 - Set your Whisper model size [https://github.com/SYSTRAN/faster-whisper](faster-whisper) - small works
 fine.
 - Pip install the requirements
-- [https://www.tensorflow.org/text/tutorials/conversational_dialogue](https://www.tensorflow.org/text/tutoria[https://www.tensorflow.org/text/tutorials/conversational_dialogue](https://www.tensorflow.org/text/tutorials/conversational_dialogue) for more information on training your own LL
 
 # Running
 - `python3 main.py`
